@@ -69,7 +69,7 @@ div.campo > label {
       display: none;
 }
 
-div.campo > i {
+div.campo > i { /*Aqui são as imagem do rostinho e da chave*/
     color: white;
     background-color: black;
     font-size: 2em;
@@ -82,8 +82,17 @@ form > div.campo {
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px; /*Ensima e embaixo fica 5 e a esquerda e a direita com 0*/
+}
+
+div.campo > input { /*aqui é o quadro onde coloca o nome*/
+    background-color: #9dfffc;
+    font-size: 1em;
+    height: 100%; 
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
 }
 
 form > input[type="submit"] {
