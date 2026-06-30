@@ -29,9 +29,7 @@ section#login {
     position: absolute;
     top: 50%;            /*isso tudo ate o transform faz ficar centralizado*/
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*tudo o que tiver fora da borda fica escondido*/
-
 
     background-color: white;
     width: 250px; /*esse e o height é o tamanho do celular (mobile firt)*/
@@ -39,6 +37,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493); /*faz a sombra ficar bonitinha, só em volta da imagem*/
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: eaise; /*esses codigos servem para uma animaçãozinha na transção, seja quando virar a tela deitada ou em pé*/
 }
@@ -71,7 +70,7 @@ div.campo > label {
 
 div.campo > i { /*Aqui são as imagem do rostinho e da chave*/
     color: white;
-    background-color: black;
+    /*background-color: black;*/
     font-size: 2em;
     width: 40px;
     padding: 5px;
@@ -79,6 +78,7 @@ div.campo > i { /*Aqui são as imagem do rostinho e da chave*/
 
 form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
@@ -86,13 +86,19 @@ form > div.campo {
     margin: 5px 0px; /*Ensima e embaixo fica 5 e a esquerda e a direita com 0*/
 }
 
+div.campo > input:focus-within { /*Esse é para o branco do nome e senha mudar a cor quando clicar*/
+    background-color: white;
+}
+
 div.campo > input { /*aqui é o quadro onde coloca o nome*/
     background-color: #9dfffc;
     font-size: 1em;
+    width: calc(100% - 44px);
     height: 100%; 
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-12px);
 }
 
 form > input[type="submit"] {

@@ -8,6 +8,7 @@
 
      section#login {
         width: 80vw;
+        height: 280;
      }
 
      section#login > div#imagem {
@@ -30,7 +31,7 @@
 
    section#login {
       width: 950px;
-      /*padding: ;*/
+      height: 350;
    }
 
    section#login > div#imagem { /*aqui é pra TV*/
@@ -49,6 +50,7 @@
    }
 
    div#formulario > p {
-      font-size: 1.2em;
+      font-size: 1em;
+      margin: 10px 0px;
  }
 }
